@@ -1,0 +1,7 @@
+queue_rules:
+  - name: default
+    update_method: merge
+    queue_conditions:
+      - check-success = ci
+    merge_conditions:
+      - check-success = ci
